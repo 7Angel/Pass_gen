@@ -29,7 +29,7 @@ secret_questions = {
 
 remake = {"e":"3", "i":"1", "o":"0", "s":"5", "z":"2", "a":"4", "g":"9"}
 
-def PassGen():
+def generate_pawwsord():
 
   AvailableChoices = ["r", "c", "e", "s", "random", "caesar", "encrypted", "secret question"]
   while True:
@@ -88,4 +88,4 @@ def PassGen():
 
   print (f"Your new password is {password}")
 
-PassGen()
+generate_pawwsord()
