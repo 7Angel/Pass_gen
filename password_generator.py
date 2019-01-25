@@ -32,7 +32,10 @@ for key, value in my_logins.items():
     my_logins[key] = Login(value[0], value[1], value[2])
 
 def generate_password():
-
+  print("Random (r): generates a random password of your chosen length.")
+  print("Caesar (c): encrypts Your phrase using Caesar cypher with an offset of Your choosing.")
+  print("Encrypted (e): encrypts Your password to HEX.")
+  print("Secret question (s): encrypts Your answers to a number of secret questions.")
   available_choices = ["r", "c", "e", "s", "random", "caesar", "encrypted", "secret question"]
   while True:
     choice = input("Please choose, what type of Password You want to generate: ").lower().strip()
